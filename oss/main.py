@@ -1,11 +1,11 @@
 import sys
 
-def square(n) -> int:
+def square(n) -> float:
     """
-    Calculates the square of an integer number.
+    Calculates the square of an float number.
 
     Args:
-        number: the integer number to be squared.
+        number: the float number to be squared.
 
     Returns:
         The squared number.
@@ -18,11 +18,11 @@ def main(args) -> None:
     Application entrypoint.
     """
     if len(sys.argv) != 2:
-        raise Exception("You must provide exactly one integer argument. " + 
+        raise Exception("You must provide exactly one float argument. " + 
                         "You have provided " + 
                         str(len(sys.argv) - 1) + " argument(s).")
 
-    number = int(sys.argv[1])
+    number = float(sys.argv[1])
     
     print(square(number))
     
