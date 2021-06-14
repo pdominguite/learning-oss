@@ -10,12 +10,8 @@ def square(n) -> int:
     Returns:
         The squared number.
     """
-    result = 0
-    
-    for _ in range(n):
-        result += n
 
-    return result
+    return n*n
 
 def main(args) -> None:
     """
